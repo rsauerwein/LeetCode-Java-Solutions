@@ -12,9 +12,10 @@ public class Solution {
             } else if (currPrice > highest) {
                 highest = currPrice;
             }
-            maxTrade = highest - lowest > maxTrade ? highest - lowest : maxTrade;
+            int currTrade = highest - lowest;
+            if(currTrade > maxTrade) maxTrade = currTrade;
         }
 
-        return maxTrade > 0 ? maxTrade : 0;
+        return maxTrade;
     }
 }
