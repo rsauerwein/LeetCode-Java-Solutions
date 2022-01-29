@@ -14,8 +14,7 @@ public class Solution {
                 prev.push(c);
             } else {
                 if (prev.isEmpty()) return false;
-                char curr = prev.pop();
-                if (mappings.get(c) != curr) return false;
+                if (mappings.get(c) != prev.pop()) return false;
             }
         }
         return prev.isEmpty();
