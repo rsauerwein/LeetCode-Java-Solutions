@@ -1,6 +1,6 @@
 public class Solution {
     public boolean isValid(String s) {
-        if (s.length() == 1) return false;
+        if (s.length() % 2 == 1) return false;
 
         Map<Character, Character> mappings = new HashMap<>();
         mappings.put(')', '(');
