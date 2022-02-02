@@ -1,7 +1,7 @@
 public class Solution {
     public double findMaxAverage(int[] nums, int k) {
         if (nums.length == 1) return nums[0];
-        double maxAverage = Double.MIN_VALUE;
+        double maxAverage;
 
         int windowSum = 0;
         for (int i = 0; i < k; i++) {
