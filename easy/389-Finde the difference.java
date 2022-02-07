@@ -1,4 +1,6 @@
 public class Solution {
+	// Runtime: 1 ms, faster than 99.79% of Java online submissions for Find the Difference.
+	// Memory Usage: 42.6 MB, less than 6.09% of Java online submissions for Find the Difference.
     public char findTheDifference(String s, String t) {
         int[] letters = new int[26];
 
